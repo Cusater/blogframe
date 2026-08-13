@@ -317,4 +317,7 @@ MIT License — 随便用，随便改。如果你愿意，保留一句"基于 Cu
 -  遇到问题提 Issue
 - 有好想法也可以直接 PR
 
+## 相关链接
+(查看示例)[https://cusater.github.io/blogframe/]
+(我的博客)[https://cusater.github.io/]
 写作愉快 
