@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例文章 - Cusater的博客</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="../index.html" title="回到首页">
+                我的个人博客
+            </a>
+            <div class="header-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../index.html">文章</a></li>
+                        <li><a href="../index.html#/archives">归档</a></li>
+                        <li><a href="../index.html#/about">关于</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
+                    <span class="icon-moon">D</span>
+                    <span class="icon-sun">L</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="article-detail">
+            <a class="back-link" href="../index.html">
+                <span class="arrow-icon">←</span> 返回文章列表
+            </a>
+            <p class="article-date">2026-08-13</p>
+            <h1 class="article-title">示例文章</h1>
+            <div class="article-tags">
+                <span class="article-tag">#Example</span>
+            </div>
+            <hr class="article-divider">
+            <div class="article-body">
+                <h2>关于这篇文章</h2>
+<p>这是一篇示例文章，好像没啥能看的，当然可以直接删除<br>删除：python tools.py -&gt; 输入4 -&gt; 选择对应文章编号 -&gt; 不断跟着提示走</p>
+            </div>
+            <nav class="article-nav"><span class="nav-item nav-placeholder"></span><span class="nav-item nav-placeholder"></span></nav>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Edit by Cusater <span class="footer-heart">♥</span></p>
+    </footer>
+    <script>
+        (function() {
+            var btn = document.getElementById('theme-toggle');
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                }
+            }
+            btn.addEventListener('click', function() {
+                var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                var next = isDark ? 'light' : 'dark';
+                applyTheme(next);
+                try { localStorage.setItem('theme', next); } catch (e) {}
+            });
+        })();
+    </script>
+</body>
+</html>
