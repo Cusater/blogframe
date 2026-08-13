@@ -83,11 +83,11 @@ cd Cusater.github.io
 
 或者直接 **Download ZIP** 解压。
 
-> 💡 提示：如果你用 GitHub Pages 的"用户名仓库"（`<用户名>.github.io`），也可以直接从本模板仓库 Fork，然后改仓库名为 `<你的用户名>.github.io`。
+>  提示：如果你用 GitHub Pages 的"用户名仓库"（`<用户名>.github.io`），也可以直接从本模板仓库 Fork，然后改仓库名为 `<你的用户名>.github.io`。
 
 ### 3. 替换成你自己的信息
 
-> 🔔 以下所有要改的内容都集中在 **`index.html`** 一个文件里，搜类名/注释就能找到。
+>  以下所有要改的内容都集中在 **`index.html`** 一个文件里，搜类名/注释就能找到。
 
 #### ① 头像
 把仓库根目录的 `avatar.jpg` 换成你自己的头像照片（**文件名和后缀保持 `avatar.jpg`**，正方形效果最好）。
@@ -140,7 +140,7 @@ python -m http.server 8000
 
 ---
 
-## 🌐 部署到 GitHub Pages
+##  部署到 GitHub Pages
 
 GitHub Pages 有两种仓库类型，**访问地址和仓库名规则不同**，别搞混：
 
@@ -191,7 +191,7 @@ GitHub Pages 会在 push 后的 1 分钟内自动重新部署生效。
 
 ---
 
-## 🧰 tools.py 菜单说明
+##  tools.py 菜单说明
 
 运行 `python tools.py` 会看到四个选项：
 
@@ -317,4 +317,4 @@ MIT License — 随便用，随便改。如果你愿意，保留一句"基于 Cu
 -  遇到问题提 Issue
 - 有好想法也可以直接 PR
 
-写作愉快 📝
+写作愉快 
